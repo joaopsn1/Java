@@ -1,13 +1,20 @@
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.Scanner;
+import java.text.DecimalFormat;
 
 public class AreaCirculo {
     public static void main(String[] args) {
-        double PI = 3.14;
-        int raio = valorAleatorio();
-        double area = PI*Math.pow(raio, 2);
-        System.out.println("Area = " + area);
-    }
-    private static int valorAleatorio () {
-        return ThreadLocalRandom.current().nextInt(1, 5);
+        Scanner scanner = new Scanner(System.in);
+
+        double PI = 3.14159;
+        double raio = scanner.nextDouble();
+        double area = PI*(Math.pow(raio, 2));
+
+        //Formatar em casas decimais
+        DecimalFormat df = new DecimalFormat("#.0000");
+
+        String areaFormatada = df.format(area);
+
+        System.out.println("Area = " + areaFormatada);
     }
 }
