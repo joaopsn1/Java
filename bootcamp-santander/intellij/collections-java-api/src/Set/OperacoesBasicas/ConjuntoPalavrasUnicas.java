@@ -23,7 +23,7 @@ public class ConjuntoPalavrasUnicas {
                 System.out.println("Palavra não encontrada no conjunto!");
             }
         } else {
-            System.out.println("O conjunto está vaziO!");
+            System.out.println("O conjunto está vazio!");
         }
     }
 
