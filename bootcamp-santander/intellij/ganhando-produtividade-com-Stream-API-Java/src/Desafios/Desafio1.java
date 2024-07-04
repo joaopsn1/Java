@@ -15,7 +15,7 @@ public class Desafio1 {
 
         //Usar o consumero para ordenar a Lista
         numeros.stream()
-                .sorted()
-                .forEach(System.out::println);
+                .sorted() //Ordena a lista em ordem crescente
+                .forEach(System.out::println); //Imprimi a lista ordenada
     }
 }

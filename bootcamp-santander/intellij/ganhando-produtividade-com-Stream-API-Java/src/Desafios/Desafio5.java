@@ -14,9 +14,9 @@ public class Desafio5 {
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
 
         OptionalDouble media = numeros.stream()
-                .filter(n -> n > 5)
-                .mapToDouble(Integer::doubleValue)
-                .average();
+                .filter(n -> n > 5) //Filtra os elementos da lista maiores que 5
+                .mapToDouble(Integer::doubleValue) //Transforma elementos inteiros em double
+                .average(); //Calcula a media dos itens maiores que 5 da lista
         System.out.println("A média dos números maiores que 5 é: " + media.getAsDouble()); //getAsDouble extrai o valor contido em OptinalDouble, evitando dele aparecer na msg do console.
     }
 }

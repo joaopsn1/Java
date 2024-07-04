@@ -14,9 +14,9 @@ public class Desafio2 {
 
         //Somar numeros pares
         int somaNumerosPar = numeros.stream()
-                .filter(n -> (n % 2 == 0))
-                .mapToInt(Integer::intValue)
-                .sum();
+                .filter(n -> (n % 2 == 0)) //Filtra os numeros pares
+                .mapToInt(Integer::intValue)//Converte Integer para int
+                .sum(); //Soma os valores pares
         System.out.println("Soma dos números pares: " + somaNumerosPar);
     }
 }
