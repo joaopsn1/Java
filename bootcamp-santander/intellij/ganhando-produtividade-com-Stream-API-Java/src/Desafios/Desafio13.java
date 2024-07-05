@@ -13,7 +13,7 @@ public class Desafio13 {
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
 
         numeros.stream()
-                .filter(n -> n > 5 && n < 10)
-                .forEach(System.out::println);
+                .filter(n -> n > 5 && n < 10) //Filtrar números dentro de um intervalo
+                .forEach(System.out::println); //Imprimir
     }
 }

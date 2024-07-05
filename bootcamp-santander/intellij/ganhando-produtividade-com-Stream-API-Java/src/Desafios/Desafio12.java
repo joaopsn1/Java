@@ -13,7 +13,7 @@ public class Desafio12 {
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
 
         int produtoDaLista = numeros.stream()
-                .reduce(1, (a, b) -> a*b);
+                .reduce(1, (a, b) -> a*b); //Múltiplica a lista
         System.out.println(produtoDaLista);
     }
 }

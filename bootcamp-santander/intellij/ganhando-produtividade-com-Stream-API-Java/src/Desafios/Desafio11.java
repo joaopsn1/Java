@@ -13,8 +13,8 @@ public class Desafio11 {
         List<Integer> numeros = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 5, 4, 3);
 
         int somaDosQuadrados = numeros.stream()
-                .map(n -> n*2)
-                .reduce(0, Integer::sum);
+                .map(n -> n*2) //Multiplica os números por 2
+                .reduce(0, Integer::sum); //Soma os itens multiplicados
 
         System.out.println("Valor da soma dos quadrados da lista: " + somaDosQuadrados);
     }
